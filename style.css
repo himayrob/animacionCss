@@ -1,0 +1,10 @@
+body{
+    background-image: url(/img/fondo.png;)
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.sun img{
+    
+  }
