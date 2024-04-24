@@ -1,6 +1,10 @@
 body {
     font-family: Comic Sans MS, sans-serif;
 }
+audio{
+    width: 5000;
+    height: 5000;
+}
 
 #animation {
     width: 100%;
@@ -40,6 +44,7 @@ body {
     left: 30%;
     animation: rainFall 5s linear forwards;
     animation-delay: 5.5s;
+    opacity: 0;
 
 }
 
@@ -91,6 +96,7 @@ body {
     left: -100px;
     animation: flowerUp 3s linear forwards;
     animation-delay: 11s;
+    opacity: 0;
 
 }
 
@@ -121,6 +127,7 @@ body {
     left: -300px;
     animation: textcenter 3s linear forwards;
     animation-delay: 14s;
+    opacity: 0;
 
 }
 
