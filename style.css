@@ -1,10 +1,141 @@
-body{
-    background-image: url(/img/fondo.png;)
+body {
+    font-family: Comic Sans MS, sans-serif;
 }
-.top{
-    display: flex;
-    justify-content: space-between;
+
+#animation {
+    width: 100%;
+    height: 100%;
+    background: url("/img/fondo.png") no-repeat;
+    position: absolute;
+
 }
-.sun img{
+
+#cloud img{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    animation: couldMove 15s linear forwards;
+    z-index: 5;
+    border: 0;
+
+}
+@keyframes couldMove{
+    0%{
+        right: -100px;
+    }
+    40%, 60%{
+        right: 60%;
+    }
+    100%{
+            right: 150%;
+    }
+}
+
+#rain img{
+    z-index: 3;
+    width: 1000px;
+    height: 5000px;
+    position: absolute;
+    top: -40%;
+    left: 30%;
+    animation: rainFall 5s linear forwards;
+    animation-delay: 5.5s;
+
+}
+
+@keyframes rainFall{
+    0% {
+        opacity: 0.2;
+        transform: translateY(-50%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+}
+
+#sun img{
+    z-index: 3;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: sunLight 5s linear infinite;
+    animation-delay: 2s;
     
-  }
+
+}
+
+@keyframes sunLight{
+    0% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+#flower img{
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -100px;
+    animation: flowerUp 3s linear forwards;
+    animation-delay: 11s;
+
+}
+
+@keyframes flowerUp{
+    0% {
+        opacity: 0;
+        transform: translateY(110%);
+        top: 40%;
+        left: 32%;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(90%);
+        top: 25%;
+        left: 32%;
+    }
+}
+
+
+#text h2{
+    z-index: 3;
+    color: rgb(240, 8, 8);
+    width: 2000px;
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    left: -300px;
+    animation: textcenter 3s linear forwards;
+    animation-delay: 14s;
+
+}
+
+@keyframes textcenter{
+    0% {
+        opacity: 0;
+        transform: translateY(110%);
+        top: 28%;
+        left: 26%;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(90%);
+        top: 15%;
+        left: 26%;
+    }
+}
